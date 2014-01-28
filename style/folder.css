@@ -1,0 +1,97 @@
+#container {
+}
+
+.wall {
+}
+
+.peice_1 {
+	position: absolute;
+	background: blue;
+	height: 100px;
+	width: 75px;
+	top: 15.8em;
+	left: 27.9em;
+}
+
+.peice_2 {
+	position: absolute;
+	background: grey;
+	height: 75px;
+	width: 100px;
+	top: 11.2em;
+	left: 27.9em;
+	z-index: 10;
+}
+
+.peice_3 {
+	position: absolute;
+	background: red;
+	height: 75px;
+	width: 78px;
+	top: 11.2em;
+	left: 31.3em;
+	z-index: 5;
+	visibility: hidden;
+}
+
+.peice_4 {
+	position: absolute;
+	background: black;
+	height: 100px;
+	width: 72px;
+	top: 15.8em;
+	left: 32.4em;
+
+}
+
+.see_me {
+	visibility: visible;
+}
+
+.p1_ani {
+
+}
+
+.p2_ani {
+	-webkit-animation: ani_2 4s;
+}
+
+.p3_ani {
+	-webkit-animation: ani_3 4s;
+}
+
+.p4_ani {
+
+}
+
+@-webkit-keyframes ani_2 {
+	from {-webkit-transform: matrix3d(1,0,0,0,0,0.070737201,-0.99749498,0,0,0.99749498,0.070737201,0,0,0,0,1); top:13.6em;}
+	to   {-webkit-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1); top:11.2em;}
+}
+
+@-webkit-keyframes ani_3 {
+	from {-webkit-transform: matrix3d(0.070737201,0,0.99749498,0,0,1,0,0,-0.99749498,0,0.070737201,0,0,0,0,1);}
+	to {-webkit-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);}
+}
+
+.identity {
+	/* this is the matrix values for no transformation */
+	-webkit-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
+}
+
+	/* 
+	 * cos(0.5) = 0.87758256
+	 * cos(1) = 0.540302305
+	 * cos(1.5) = 0.070737201
+	 * cos(1.7) = -0.128844494
+	 * cos(2) = -0.416146836
+	 * sin(0.5) = 0.47942553
+	 * sin(1) = 0.8414709
+	 * sin(1.5) = 0.99749498
+	 * sin(1.7) = 0.99166481
+	 * sin(2) = 0.90929742  
+	 */
+
+
+
+
