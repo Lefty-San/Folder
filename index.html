@@ -13,7 +13,7 @@
 <body>
 	<div id="container">
 		<div class="wall">
-			<div class="peice_1"></div>
+			<div class="peice_1 p1_ani"></div>
 			<div class="peice_2 p2_ani"></div>
 			<div class="peice_3"></div>
 			<div class="peice_4"></div>
@@ -27,7 +27,11 @@ function firstTimer() {
 		$(".peice_3").addClass('see_me');
 		window.clearInterval(raise1);
 	}
-	
+var drop1 = setInterval( function() {secondTimer()},7000);
+function secondTimer() {
+		$(".peice_4").addClass('p4_ani');
+		$(".peice_4").addClass("see_me");
+}
 
 </script>
 </body>
